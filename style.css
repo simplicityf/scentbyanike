@@ -1,0 +1,238 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dae6ee;
+}
+
+.navv {
+    background-color: #97CAE7;
+}
+
+.scent {
+font-family:"Bebas Neue", sans-serif;
+font-size: 20px;
+color: #020415 !important;
+letter-spacing: 3px !important;
+}
+
+.liist {
+    font-family: "teko", serif;
+}
+
+.liist2 {
+    color: #020415 !important;
+}
+
+.liist2:hover {
+    color: white !important;
+}
+
+.divimg {
+    margin-top: 10px;
+    height: auto;
+    overflow-y: hidden;
+
+}
+
+.divimg img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -300px;
+    z-index: -1
+}
+
+.h1b {
+    margin-top: 150px;
+    font-family:  "Bebas Neue", sans-serif;
+    color: #020415 !important;
+    line-height: 90%;
+    letter-spacing: 8px !important;
+    margin-left: 20px;
+}
+
+.p1  {
+    font-weight: bold;
+    font-family: "teko", serif;
+    font-size: 30px;
+    color: #020415;
+    line-height: 90%;
+    letter-spacing: 9px;
+    margin-left: 20px;
+}
+
+.bttn {
+    font-family: "teko" serif;
+    margin-left: 20px;
+}
+
+
+.shoph {
+    background-color: #020415;
+    width: 100%;
+    height: 50px;
+    margin-top: -299px;
+    color: #FCFEFF;
+    text-align: center;
+    padding-top: 15px;
+    letter-spacing: 3px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.items {
+    border: 1px solid transparent;
+    height: 102px;
+    background-color: #F2F5F5;
+}
+.shop2 {
+    float: left;
+    font-family: "teko", serif;
+    letter-spacing: 3px;
+    margin-top: 35px;
+    margin-left: 20px;
+    color: #000;
+}
+
+.shop2img {
+    width:45%; 
+    height: 100px;
+    float: right;
+}
+
+.imgCard {
+    width:100%;
+}
+
+.roow {
+    height: 200vh !important;
+}
+
+.long {
+    font-family: "teko" serif;
+    color: #020415;
+    letter-spacing: 4px;
+}
+
+.gift {
+    float:left;
+    font-family: "teko" serif;
+    color: #020415;
+}
+
+.comment {
+    float: right;
+    font-family: "teko" serif;
+    color: #020415;
+}
+
+.divimg2 {
+    margin-top: 10px;
+    height: 400px;
+    overflow-y: hidden;
+}
+
+.divimg2 img {
+    width: 100%;
+    height: inherit;
+    position: relative;
+    top: -300px;
+    z-index: -1;
+}
+
+.hex {
+     opacity: 0.65;
+}
+
+.hex:hover {
+    border: 1px solid black;
+    opacity: 1;
+}
+
+.h1b2 {
+    margin-top: 150px;
+    font-family:  "Bebas Neue", sans-serif;
+    color: #020415 !important;
+    letter-spacing: 3px !important;
+    text-align: center;
+}
+
+.p12  {
+    font-weight: bold;
+    font-family: "teko", serif;
+    font-size: 30px;
+    color: #020415;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.form-control {
+    border-radius: 0;
+  }
+
+  textarea {
+    resize: none;
+    width: 100%;
+  }
+
+  gmp-map {
+    width: 100%;
+    height: 400px;
+  }
+
+  footer {
+    background-color: #020415;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+
+
+@media screen and (min-width:990px) {
+    .divimg img {
+       top: -400px;        
+    }
+    
+    .h1b {
+      margin-top: 300px;
+    }
+
+    .divimg {
+        height: auto;
+    }
+    .divimg img {
+        height: inherit;
+    }
+
+    .shoph {
+        margin-top: -398px;
+    }
+
+    .shop2img {
+        height: 150px;
+    }
+    .items {
+        height: 152px;
+    }
+
+    .divimg2 {
+        height: 400px;
+    }
+    .divimg2 img {
+        height: inherit;
+    }
+  
+    .bttn2 {
+        margin-left: 600px;
+    }
+}
