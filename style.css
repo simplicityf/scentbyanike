@@ -7,6 +7,7 @@
 
 body {
     background-color: #dae6ee;
+    overflow-x: hidden;
 }
 
 .navv {
@@ -32,28 +33,28 @@ letter-spacing: 3px !important;
     color: white !important;
 }
 
-.divimg {
-    margin-top: 10px;
-    height: auto;
-    overflow-y: hidden;
 
-}
-
-.divimg img {
-    width: 100%;
-    height: auto;
+.container1 {
     position: relative;
-    top: -300px;
-    z-index: -1
 }
 
-.h1b {
-    margin-top: 150px;
+#img1 {
+    width: 100%;
+    height: 70vh;
+    opacity: 0.7;
+}
+
+.texton {
+    position: absolute;
+    top:  8px;
+    left: 16px;
+}
+
+.h1 {
     font-family:  "Bebas Neue", sans-serif;
     color: #020415 !important;
     line-height: 90%;
     letter-spacing: 8px !important;
-    margin-left: 20px;
 }
 
 .p1  {
@@ -62,13 +63,11 @@ letter-spacing: 3px !important;
     font-size: 30px;
     color: #020415;
     line-height: 90%;
-    letter-spacing: 9px;
-    margin-left: 20px;
+    letter-spacing: 5px;
 }
 
 .bttn {
-    font-family: "teko" serif;
-    margin-left: 20px;
+    font-family: "teko" serif
 }
 
 
@@ -76,9 +75,7 @@ letter-spacing: 3px !important;
     background-color: #020415;
     width: 100%;
     height: 50px;
-    margin-top: -299px;
     color: #FCFEFF;
-    text-align: center;
     padding-top: 15px;
     letter-spacing: 3px;
     font-family: "Bebas Neue", sans-serif;
@@ -86,31 +83,32 @@ letter-spacing: 3px !important;
 
 .items {
     border: 1px solid transparent;
-    height: 102px;
     background-color: #F2F5F5;
+    height: auto;
 }
+
 .shop2 {
-    float: left;
     font-family: "teko", serif;
     letter-spacing: 3px;
-    margin-top: 35px;
+    margin-top: 3px;
     margin-left: 20px;
     color: #000;
 }
 
-.shop2img {
-    width:45%; 
-    height: 100px;
-    float: right;
+#img2 {
+    width: 100%;
+    height: 15vh;
 }
 
-.imgCard {
-    width:100%;
+.height {
+    height: 70vh !important;
 }
 
-.roow {
-    height: 200vh !important;
+.imgheight {
+    height: 50vh !important;
+    width: 100% !important;
 }
+
 
 .long {
     font-family: "teko" serif;
@@ -118,14 +116,18 @@ letter-spacing: 3px !important;
     letter-spacing: 4px;
 }
 
+.grid1 {
+    display: grid;
+    grid-template-columns: 95%;
+    align-items: center;
+}
+
 .gift {
-    float:left;
     font-family: "teko" serif;
     color: #020415;
 }
 
 .comment {
-    float: right;
     font-family: "teko" serif;
     color: #020415;
 }
@@ -145,20 +147,20 @@ letter-spacing: 3px !important;
 }
 
 .hex {
+     width: 100%;
+     height: 50vh;
      opacity: 0.65;
 }
 
 .hex:hover {
     border: 1px solid black;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .h1b2 {
-    margin-top: 150px;
     font-family:  "Bebas Neue", sans-serif;
     color: #020415 !important;
     letter-spacing: 3px !important;
-    text-align: center;
 }
 
 .p12  {
@@ -170,6 +172,7 @@ letter-spacing: 3px !important;
     margin-top: -20px;
 }
 
+
 .form-control {
     border-radius: 0;
   }
@@ -179,9 +182,10 @@ letter-spacing: 3px !important;
     width: 100%;
   }
 
-  gmp-map {
+  #map {
     width: 100%;
     height: 400px;
+    border:0;
   }
 
   footer {
@@ -197,42 +201,16 @@ letter-spacing: 3px !important;
     text-decoration: none;
   }  
 
-
 @media screen and (min-width:990px) {
-    .divimg img {
-       top: -400px;        
+
+    .grid1 {
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 100px;
+    }
+
+    .center1 {
+        padding-top: 80px;
+        margin-left: 280px;
     }
     
-    .h1b {
-      margin-top: 300px;
-    }
-
-    .divimg {
-        height: auto;
-    }
-    .divimg img {
-        height: inherit;
-    }
-
-    .shoph {
-        margin-top: -398px;
-    }
-
-    .shop2img {
-        height: 150px;
-    }
-    .items {
-        height: 152px;
-    }
-
-    .divimg2 {
-        height: 400px;
-    }
-    .divimg2 img {
-        height: inherit;
-    }
-  
-    .bttn2 {
-        margin-left: 600px;
-    }
 }
