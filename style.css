@@ -8,6 +8,16 @@
 body {
     background-color: #dae6ee;
     overflow-x: hidden;
+    color: #020415;
+}
+
+p, a {
+    font-family: "teko", serif;
+}
+
+h1, h2, h3, h4 {
+    font-family:"Bebas Neue", sans-serif;
+    color: #020415 !important;
 }
 
 .navv {
@@ -19,7 +29,9 @@ font-family:"Bebas Neue", sans-serif;
 font-size: 20px;
 color: #020415 !important;
 letter-spacing: 3px !important;
+margin-left: 45px;
 }
+
 
 .liist {
     font-family: "teko", serif;
@@ -69,16 +81,8 @@ letter-spacing: 3px !important;
 .bttn {
     font-family: "teko" serif
 }
-
-
-.shoph {
-    background-color: #020415;
-    width: 100%;
-    height: 50px;
-    color: #FCFEFF;
-    padding-top: 15px;
-    letter-spacing: 3px;
-    font-family: "Bebas Neue", sans-serif;
+.dropdown button {
+    width: 40%;
 }
 
 .items {
@@ -101,14 +105,44 @@ letter-spacing: 3px !important;
 }
 
 .height {
-    height: 70vh !important;
+    height: 50vh !important;
 }
 
 .imgheight {
-    height: 50vh !important;
+    height: 35vh !important;
     width: 100% !important;
 }
 
+.boddy {
+    line-height: 0.5px;
+    margin-top: -6px;
+    overflow-x: auto;
+}
+
+.logoimg{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 3px;
+    position: fixed;
+    top: 5px;
+
+}
+
+#view2{
+    display: block;
+    margin-bottom: 3px;
+}
+
+ #view3 {
+    display: none;
+}
+
+#view1 {
+    display: none;
+    margin-bottom: 3px;
+}
 
 .long {
     font-family: "teko" serif;
@@ -182,6 +216,30 @@ letter-spacing: 3px !important;
     width: 100%;
   }
 
+  .crimg {
+    width:30px;
+    height: 30px;
+  }
+
+
+   .media-left img{
+    width: 40px;
+    height: 40px;
+   }
+
+   .media-heading p{
+    font-weight: bold;
+   }
+  .strong {
+    font-weight: bold;
+    font-size: 20px !important;
+  }
+
+  .carousel-inner .item img {
+    width: 100%;
+    height: 50vh;
+  }
+
   #map {
     width: 100%;
     height: 400px;
@@ -190,7 +248,7 @@ letter-spacing: 3px !important;
 
   footer {
     background-color: #020415;
-    color: #f5f5f5;
+    color: hsl(0, 0%, 96%);
     padding: 32px;
   }
   footer a {
@@ -200,8 +258,91 @@ letter-spacing: 3px !important;
     color: #777;
     text-decoration: none;
   }  
+.whatsapp {
+    color: rgb(26, 250, 26);
+    font-size: 25px;
+    padding: 5px;
+}
 
-@media screen and (min-width:990px) {
+.fb {
+    color: rgb(29, 49, 233);
+    font-size: 25px;
+    padding: 5px;
+}
+
+.tik{
+    border: none;
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.ig {
+    color: rgb(250, 78, 78);
+    font-size: 25px;
+    padding: 5px;
+}
+
+.mail {
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: white;
+    color: rgb(238, 103, 103);
+    font-size: 25px;
+    padding: 5px;
+}
+
+#login {
+    margin: auto;
+}
+
+.userdetail {
+    display: grid;
+    grid-template-columns: 90%;
+    width: 50%;
+    margin-top: 5px;
+    
+}
+
+#userview {
+    margin-top: 150px;
+    border: 1x solid blue;
+    width: auto;
+    height: auto;
+    outline: 1px solid blue;
+    width: 100%;
+    
+}
+
+.dashboard {
+    background-color: #4b91b9;
+    width: 50%
+}
+
+.white {
+    color: white !important;
+}
+
+#username {
+    padding-top: 400px;
+    border: none;
+    outline: 1px solid blue;
+    width: 30%;
+}
+
+.profileImg {
+    width: 40px;
+    height: 40px;
+}
+
+.imgProfile {
+    width: 150px;
+    height: 150px;
+}
+
+@media screen and (min-width:700px) {
 
     .grid1 {
         grid-template-columns: 45% 45%;
@@ -210,7 +351,21 @@ letter-spacing: 3px !important;
 
     .center1 {
         padding-top: 80px;
-        margin-left: 280px;
+        margin-left: 180px;
+    }
+
+    .userdetail {
+        grid-template-columns: 45% 45%;
+    }
+
+    #userview {
+        margin-top: 200px;
     }
     
+}
+
+@media screen and (min-width:1200px) {
+    .center1 {
+        margin-left: 480px;
+    }
 }

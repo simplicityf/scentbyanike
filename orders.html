@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scent By Anike</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- This webiste is created by Omobolanle Azeezat -->
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!--Google map-->
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChUep-XpAWl6rJB0TZ3QroJqmyejs_ZL4&callback=console.debug&libraries=maps,marker&v=beta">
+</script>
+
+<script src="map.js"></script>
+
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/ba9d34204b.js" crossorigin="anonymous"></script>
+
+<!--favico icon-->
+<link rel="icon" href="images/logoaniks.png">
+
+</head>
+<body>
+ <div class="container">
+    <div class="text-right">
+       <a href="dashboard.html"> &times; </a>
+    </div>
+<input class="form-control" id="myInput" type="text" placeholder="search">
+<br>
+<table class="table table-boarded table-striped table-responsive">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Full Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+        </tr>
+    </thead>
+    <tbody id="myTable">
+        <tr>
+            <td>Email</td>
+            <td>Full Name</td>
+            <td>Address</td>
+            <td>City</td>
+            <td>State</td>
+            <td>
+                <a href="edit_blog.html" title="Edit"></a>
+                <a href="blog.html" title="view"></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#myInput").on("keyup",function(){
+                var value = $(this).val().toLowerCase();
+                $("myTable tr").filter(function(){
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+    </body>
+    </html>
